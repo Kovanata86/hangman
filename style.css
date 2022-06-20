@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mapPicture {
+    width: 40%;
+    margin: 100px auto;
+}
+
+body {
+    background-color: #ccc ;
+}
+.word {
+    height: auto;
+    font-size: 40px;
+    background-size: cover;
+    background-color: rgb(112, 112, 209);
+    color: bisque; 
+    text-align: center;
+    padding: 20px;
+    
+}
+
+#map {
+    width: 100%;
+}
+
+#game {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#answer {
+   
+   text-align: center;
+}
+
+#letter {
+    width: 40px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.choice {
+    width: 10%;
+    background-color: rgb(73, 162, 221);
+    color: white;
+    font-size: 40px;
+
+}
