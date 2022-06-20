@@ -6,4 +6,20 @@ export function  getWords() {
     return word;
 }
 
-console.log(getWords());
+export function getLetPos (word, letter) {
+    let posNumArr = [];
+    let privSearchResalt;
+ 
+    for (; ; ){
+       const searchIndex = privSearchResalt === undefined ? 0 : privSearchResalt + 1;
+       privSearchResalt = word.indexOf(letter, searchIndex ) // -1
+       if(privSearchResalt === -1){
+          break;
+       } 
+       posNumArr.push(privSearchResalt);
+ 
+    }
+ 
+    return posNumArr;
+ }
+ 
