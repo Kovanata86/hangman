@@ -22,4 +22,10 @@ export function getLetPos (word, letter) {
  
     return posNumArr;
  }
- 
+ const result  = getLetPos();
+
+
+
+ if ( result.length === 0 ) {
+   counter()
+ }
