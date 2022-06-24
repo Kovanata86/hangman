@@ -22,10 +22,26 @@ export function getLetPos (word, letter) {
  
     return posNumArr;
  }
- const result  = getLetPos();
 
 
+ 
+ export  function spanCreation(receivedWord){
+   let word = document.querySelector('.word');
+   for (let i = 1; i <= receivedWord.length; i++){
+    
+    let spans = document.createElement('span');
+    spans.innerHTML = '_';
+    word.prepend(spans);
+   }
 
- if ( result.length === 0 ) {
-   counter()
- }
+}
+
+ 
+ let button = document.getElementsByClassName('choice');
+ button.onclick = function pictureСhange(){
+     
+     let i = 0;
+     let mapPicture = document.getElementById("mapPicture");
+     let imgs = new Array('1.png','2.png', '3.png', '4.png');
+}
+ 
