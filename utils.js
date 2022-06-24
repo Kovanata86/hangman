@@ -35,13 +35,11 @@ export function getLetPos (word, letter) {
    }
 
 }
-
  
- let button = document.getElementsByClassName('choice');
- button.onclick = function pictureСhange(){
-     
-     let i = 0;
-     let mapPicture = document.getElementById("mapPicture");
-     let imgs = new Array('1.png','2.png', '3.png', '4.png');
+ export function pictureСhange(imgIndex) {
+    
+   let mapPic = document.getElementById("map");
+   let imgs = ['2.png','3.png', '4.png'];
+   mapPic.src = './img/'+ imgs[imgIndex];  
+ 
 }
- 
