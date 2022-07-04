@@ -23,8 +23,6 @@ export function getLetPos (word, letter) {
     return posNumArr;
  }
 
-
- 
  export  function spanCreation(receivedWord){
    let word = document.querySelector('.word');
    for (let i = 1; i <= receivedWord.length; i++){
@@ -36,10 +34,18 @@ export function getLetPos (word, letter) {
 
 }
  
+export function isGameWon (){
+   let word = document.querySelector(.'word');
+   let wordsArr = [...word.children];
+   return wordsArr.every(span => span.textContent !== '_');
+
+
+
  export function pictureСhange(imgIndex) {
     
    let mapPic = document.getElementById("map");
    let imgs = ['2.png','3.png', '4.png'];
    mapPic.src = './img/'+ imgs[imgIndex];  
  
+
 }
