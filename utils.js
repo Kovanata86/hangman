@@ -43,5 +43,13 @@ export function getLetPos (word, letter) {
      let i = 0;
      let mapPicture = document.getElementById("mapPicture");
      let imgs = new Array('1.png','2.png', '3.png', '4.png');
+
+}
+
+
+function isGameWon (){
+   let word = document.querySelector(.'word');
+   let wordsArr = [...word.children];
+   return wordsArr.every(span => span.textContent !== '_');
 }
  
